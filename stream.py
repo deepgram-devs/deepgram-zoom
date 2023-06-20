@@ -17,7 +17,7 @@ async def run():
         'Authorization': 'Token YOUR_DEEPGRAM_API_KEY'
     }
 
-    async with websockets.connect('wss://api.deepgram.com/v1/listen', extra_headers=extra_headers) as ws:
+    async with websockets.connect('wss://api.deepgram.com/v1/listen?tier=nova&smart_format=true', extra_headers=extra_headers) as ws:
         async def sender(ws):
             chunk_size = 4096
             # this seems to be necessary otherwise waiting for new audio will always block
