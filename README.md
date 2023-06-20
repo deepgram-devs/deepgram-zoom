@@ -1,6 +1,22 @@
-# Repo Name
+# Deepgram + Zoom
 
-A repository template for open-source demos, guides and sample apps. Description here.
+This code is the companion to our guide, [Integrate Deepgram with Zoom](https://developers.deepgram.com/docs/integrate-deepgram-with-zoom). Head over there for full instructions.
+
+## Set Up
+
+### Prerequisites
+You must have:
+
+* Python >= 3.6+
+* A valid Deepgram API key (you can create one in our [Console](https://console.deepgram.com/))
+
+### Installation
+
+* Clone this repository
+* `pip install -r requirements.txt` (or `pip3` depending on your Python installation)
+* On line 17 of `stream.py`, replace `YOUR_DEEPGRAM_API_KEY` with your Deepgram API Key
+
+Then, continue following the steps outlined in the guide [Integrate Deepgram with Zoom](https://developers.deepgram.com/docs/integrate-deepgram-with-zoom).
 
 ## Development and Contributing
 
